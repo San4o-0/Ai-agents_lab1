@@ -1,0 +1,47 @@
+{
+ "_comment": "Фіксовані пропозиції для режиму FAULTLOG_AI_MODE=scripted. Ключ — текст повідомлення після обрізання пробілів і зведення регістру (розділ 3.5 специфікації).",
+ "proposals": {
+  "стартер лише клацає, світло на панелі яскраве, пробіг 120000 км": {
+   "title": "Стартер клацає, не прокручує",
+   "system": "starter",
+   "mileage_km": 120000,
+   "needs_clarification": false,
+   "clarification_question": null
+  },
+  "бак порожній, мотор крутить і не схоплює, 85 тис. км": {
+   "title": "Порожній бак, двигун не схоплює",
+   "system": "fuel",
+   "mileage_km": 85000,
+   "needs_clarification": false,
+   "clarification_question": null
+  },
+  "стартер клацає, світло на панелі яскраве": {
+   "title": "Стартер клацає",
+   "system": "starter",
+   "mileage_km": 150000,
+   "needs_clarification": false,
+   "clarification_question": null
+  },
+  "акумулятор сів, на панелі нічого не світиться": {
+   "title": "Акумулятор розряджений",
+   "system": "engine_block",
+   "mileage_km": null,
+   "needs_clarification": false,
+   "clarification_question": null
+  },
+  "машина не їде, зробіть щось": {
+   "title": null,
+   "system": null,
+   "mileage_km": null,
+   "needs_clarification": true,
+   "clarification_question": "Що саме відбувається при повороті ключа?"
+  }
+ },
+ "default": {
+  "title": null,
+  "system": null,
+  "mileage_km": null,
+  "needs_clarification": true,
+  "clarification_question": "Опишіть, що відбувається при спробі завести автомобіль."
+ }
+}
