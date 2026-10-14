@@ -139,18 +139,22 @@ Remove-Item data\run-*.json
 
 | Фаза | Файл / розділ | Коміт | Що студент перевірив або вирішив |
 |---|---|---|---|
-| Дослід | `notebooks/01_experiment.ipynb` | `d0a63f1` | Зафіксував очікування до виклику моделі; не змінював їх після помилки моделі на `M06` |
-| Правила проєкту (`constitution`) | `specs/constitution.md` | `b89348d` | Обмежив роботу трьома функціями; заборонив параметри обходу перевірки в API |
-| Специфікація (`specify`) | `specs/spec.md` | `b89348d` | Розділив код HTTP і змістовий статус; описав підміну джерела пропозиції до коду |
-| Уточнення (`clarify`) | `specs/clarify.md` | `2d9091c` | Відхилив `400` для всіх відмов на користь `422` + `status`; відхилив злиття `safety_hold` з `needs_clarification` |
-| План і задачі (`plan`, `tasks`) | `specs/plan.md`, `specs/tasks.md` | `2d9091c` | Зробив `policy` незалежним від `ai` і `storage`; відхилив повторні спроби виклику моделі |
-| Реалізація (`implement`) | `app/`, `tests/` | `4f6d9af` | Виправив D-1 і D-2 після падіння власних тестів; не підлаштовував очікування |
-| Зовнішня перевірка | `notebooks/02_api_verification.ipynb` | HEAD `main` | Запустив три екземпляри, виконав S1–S11 через HTTP; перевірив, що відмови не змінюють `id` і поля |
-| Звірка (`converge`) | `specs/converge.md` | HEAD `main` | Зафіксував 2 виправлені розбіжності і 5 свідомих обмежень |
+| Дослід | [`notebooks/01_experiment.ipynb`](https://github.com/San4o-0/Ai-agents_lab1/blob/c34e594/notebooks/01_experiment.ipynb) | [`c34e594`](https://github.com/San4o-0/Ai-agents_lab1/commit/c34e594) | Зафіксував очікування до виклику моделі; не змінював їх після помилки моделі на `M06` |
+| Правила проєкту (`constitution`) | [`specs/constitution.md`](https://github.com/San4o-0/Ai-agents_lab1/blob/f90a8eb/specs/constitution.md) | [`f90a8eb`](https://github.com/San4o-0/Ai-agents_lab1/commit/f90a8eb) | Обмежив роботу трьома функціями; заборонив параметри обходу перевірки в API |
+| Специфікація (`specify`) | [`specs/spec.md`](https://github.com/San4o-0/Ai-agents_lab1/blob/f90a8eb/specs/spec.md) | [`f90a8eb`](https://github.com/San4o-0/Ai-agents_lab1/commit/f90a8eb) | Розділив код HTTP і змістовий статус; описав підміну джерела пропозиції до коду |
+| Уточнення (`clarify`) | [`specs/clarify.md`](https://github.com/San4o-0/Ai-agents_lab1/blob/f2129e8/specs/clarify.md) | [`f2129e8`](https://github.com/San4o-0/Ai-agents_lab1/commit/f2129e8) | Відхилив `400` для всіх відмов на користь `422` + `status`; відхилив злиття `safety_hold` з `needs_clarification` |
+| План і задачі (`plan`, `tasks`) | [`specs/plan.md`](https://github.com/San4o-0/Ai-agents_lab1/blob/f2129e8/specs/plan.md), [`specs/tasks.md`](https://github.com/San4o-0/Ai-agents_lab1/blob/f2129e8/specs/tasks.md) | [`f2129e8`](https://github.com/San4o-0/Ai-agents_lab1/commit/f2129e8) | Зробив `policy` незалежним від `ai` і `storage`; відхилив повторні спроби виклику моделі |
+| Реалізація (`implement`) | [`app/`](https://github.com/San4o-0/Ai-agents_lab1/tree/a389bb3/app), [`tests/`](https://github.com/San4o-0/Ai-agents_lab1/tree/a389bb3/tests) | [`a389bb3`](https://github.com/San4o-0/Ai-agents_lab1/commit/a389bb3) | Виправив D-1 і D-2 після падіння власних тестів; не підлаштовував очікування |
+| Зовнішня перевірка | [`notebooks/02_api_verification.ipynb`](https://github.com/San4o-0/Ai-agents_lab1/blob/7f5850f/notebooks/02_api_verification.ipynb) | [`7f5850f`](https://github.com/San4o-0/Ai-agents_lab1/commit/7f5850f) | Запустив три екземпляри, виконав S1–S11 через HTTP; перевірив, що відмови не змінюють `id` і поля |
+| Звірка (`converge`) | [`specs/converge.md`](https://github.com/San4o-0/Ai-agents_lab1/blob/7f5850f/specs/converge.md) | [`7f5850f`](https://github.com/San4o-0/Ai-agents_lab1/commit/7f5850f) | Зафіксував 2 виправлені розбіжності і 5 свідомих обмежень |
 
-Специфікація всіх трьох функцій і очікування для перевірки API (`b89348d`) існують у Git
-**раніше** за будь-який код сервісу (`4f6d9af`). Перший notebook (`d0a63f1`) — раніше за
-специфікацію. Коміт остаточно поданої версії — HEAD гілки `main` (`git log -1 --format=%H`).
+Специфікація всіх трьох функцій і очікування для перевірки API ([`f90a8eb`](https://github.com/San4o-0/Ai-agents_lab1/commit/f90a8eb))
+існують у Git **раніше** за будь-який код сервісу ([`a389bb3`](https://github.com/San4o-0/Ai-agents_lab1/commit/a389bb3)).
+Перший notebook ([`c34e594`](https://github.com/San4o-0/Ai-agents_lab1/commit/c34e594)) — раніше за специфікацію.
+Повна історія: [коміти гілки `main`](https://github.com/San4o-0/Ai-agents_lab1/commits/main).
+
+Коміт остаточно поданої версії — останній коміт гілки `main`, що оновлює лише посилання цього
+звіту; зміст роботи зафіксовано в [`7f5850f`](https://github.com/San4o-0/Ai-agents_lab1/commit/7f5850f).
 
 ## Результати першого notebook
 
